@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <h1><b><big><i><u>TIC TAC TOE</b></h1></big></i></u>
+    <div class="options">
+        <label>
+            <input type="radio" name="mode" value="With friend" checked> With friend
+        </label>
+        <label>
+            <input type="radio" name="mode" value="vsAI"> vs AI
+        </label>
+        <button onclick="startGame()">Start Game</button>
+    </div>
+    <div id="board" class="board">
+        <!-- Cells will be dynamically generated using JavaScript -->
+    </div>
+    <script src="script3.js"></script>
+</body>
+</html>
+<style>
+    body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1ebbc0;
+}
+
+.options {
+    margin-bottom: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebf3f2;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+</style>
+<body style="background-image: url('image1.jpg'); background-size: cover;">
